@@ -6,5 +6,6 @@ int main()
     cout<<"test";
     cout<<"test again";
     cout<<"test_more";
+    cout<<"YES";
     return 0;
 }
