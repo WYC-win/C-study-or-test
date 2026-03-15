@@ -3,6 +3,26 @@
 某大二选手的 C++ 学习轨迹仓库。  
 主线是：从 `Hello World` 到比赛题，从“能跑”到“能过样例再说”。
 
+<p align="center">
+	<img alt="language" src="https://img.shields.io/badge/Language-C%2B%2B17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white">
+	<img alt="status" src="https://img.shields.io/badge/Status-Keep%20Grinding-2EA043?style=for-the-badge">
+	<img alt="theme" src="https://img.shields.io/badge/Theme-AC%20%3E%20Aesthetics-orange?style=for-the-badge">
+	<img alt="focus" src="https://img.shields.io/badge/Focus-Algorithm%20Training-6f42c1?style=for-the-badge">
+</p>
+
+> "今天多调一个边界，明天少交一发罚时。"
+
+---
+
+## 一眼看懂
+
+| 维度 | 信息 |
+|---|---|
+| 仓库类型 | C++ 学习/刷题/竞赛记录 |
+| 学习路线 | 入门基础 -> 校赛实战 -> 蓝桥备赛 -> 阶梯进阶 |
+| 题目风格 | 数学、字符串、排序、博弈、数据处理 |
+| 代码风格 | 先 AC 后优化，逐步规范注释与命名 |
+
 ## 项目定位
 
 - 记录 C++ 学习与刷题过程
@@ -10,6 +30,19 @@
 - 按阶段保存：入门 -> 校赛/蓝桥 -> 阶梯赛进阶
 
 一句话版本：这是一个持续升级的「代码练级档」，偶尔有神之一手，偶尔也有“这题当时我到底在想什么”。
+
+## 练级进度条
+
+```text
+新手村 Enter_door_1                [##########] 100%
+校赛 CUGB十九届程序设计赛          [########--]  80%
+蓝桥 Blue-bridge                   [#####-----]  50%
+阶梯赛 Group Programming Ladder    [#######---]  70%
+```
+
+小提示：百分比是“个人体感完成度”，不是 OJ 官方统计，主打一个真实。
+
+---
 
 ## 仓库结构
 
@@ -49,6 +82,8 @@
 
 ### 1) Enter_door_1：新手村
 
+🟢 难度标签：`基础起步`
+
 关键词：输入输出、基础运算、字符处理、格式化。
 
 - [hello world.cpp](Enter_door_1/hello%20world.cpp)：经典开局
@@ -65,6 +100,8 @@
 
 ### 2) CUGB十九届程序设计赛：实战区
 
+🟡 难度标签：`中等偏实战`
+
 关键词：字符串统计、排序思路、比赛风格题目。
 
 - [简单输出.cpp](CUGB十九届程序设计赛/简单输出.cpp)：中位值类基础逻辑
@@ -79,6 +116,8 @@
 
 ### 3) Blue-bridge：蓝桥杯备赛
 
+🟠 难度标签：`数论专项`
+
 关键词：数论、质数判断。
 
 - [16-A.cpp](Blue-bridge/16-A.cpp)：与素数相关的计数问题
@@ -87,6 +126,8 @@
 正式向算法竞赛题型靠拢，数学感与边界处理意识都在提升。
 
 ### 4) Group Programming Ladder Tournament：进阶段位赛
+
+🔴 难度标签：`综合提升`
 
 关键词：组合数学、博弈、数据处理。
 
@@ -100,7 +141,21 @@
 
 ### 5) helpfulless：测试角落
 
+⚪ 难度标签：`调试辅助`
+
 - [vs test output.cpp](helpfulless/vs%20test%20output.cpp)：本地测试/调试用途
+
+---
+
+## 题型雷达
+
+| 题型 | 覆盖度 | 代表文件 |
+|---|---|---|
+| 基础输入输出 | ⭐⭐⭐⭐⭐ | [hello world.cpp](Enter_door_1/hello%20world.cpp), [P1001.cpp](Enter_door_1/P1001.cpp) |
+| 数学计算 | ⭐⭐⭐⭐ | [P5708.cpp](Enter_door_1/P5708.cpp), [16-A.cpp](Blue-bridge/16-A.cpp) |
+| 字符串处理 | ⭐⭐⭐⭐ | [P5704.cpp](Enter_door_1/P5704.cpp), [小吴想上清北.cpp](CUGB十九届程序设计赛/小吴想上清北.cpp) |
+| 逻辑与映射 | ⭐⭐⭐ | [RGB.cpp](Group%20Programming%20Ladder%20Tournament/RGB.cpp) |
+| 博弈/组合思维 | ⭐⭐⭐ | [L5-box-game.cpp](Group%20Programming%20Ladder%20Tournament/L5-box-game.cpp), [L4_compet.cpp](Group%20Programming%20Ladder%20Tournament/L4_compet.cpp) |
 
 ## 知识点分布
 
@@ -129,6 +184,14 @@ g++ -std=c++17 -O2 -Wall "Enter_door_1/P1001.cpp" -o "P1001.exe"
 ./P1001.exe
 ```
 
+<details>
+<summary><b>VS Code 任务流（你现在就在用）</b></summary>
+
+在当前工作区可直接使用默认构建任务：`C/C++: g++.exe 生成活动文件`。  
+适合“打开一个单文件 -> 直接编译运行”的刷题节奏。
+
+</details>
+
 ## 当前风格说明
 
 - 以“先 AC 再优化”为主
@@ -145,4 +208,12 @@ g++ -std=c++17 -O2 -Wall "Enter_door_1/P1001.cpp" -o "P1001.exe"
 
 欢迎交流与指正。  
 祝你我都能在下一场比赛里少写一行 bug，多拿一分罚时。
+
+---
+
+## 彩蛋区
+
+- 当你看到 `可能是板子吧.cpp` 这个文件名时，说明命名已经进入“先提交再重命名”阶段。
+- 当你看到 `超级玛丽题（欲得一简便方法）.cpp` 时，说明你已经掌握了输出题的精髓：
+	不是不会写，是不想手敲那么多行。
 
